@@ -1,0 +1,122 @@
+/*************************************************************************************************************************************************************************************************************************************************************
+
+"userChrome.css" is a custom CSS file that can be used to specify CSS style rules for Floorp's interface (NOT internal site) using "chrome" privileges.
+For instance, if you want to hide the tab bar, you can use the following CSS rule:
+
+**************************************
+#TabsToolbar {                       *
+    display: none !important;        *
+}                                    *
+**************************************
+
+NOTE: You can use the userChrome.css file without change preferences (about:config)
+
+Quote: https://userChrome.org | https://github.com/topics/userchrome 
+
+************************************************************************************************************************************************************************************************************************************************************/
+
+@charset "UTF-8";
+
+@-moz-document url(chrome://browser/content/browser.xhtml){
+
+
+/* about:config
+    toolkit.legacyUserProfileCustomizations.stylesheets > true
+    browser.compactmode.show > true
+
+*/
+
+:root {
+    --bookmark-bar-height: -28px !important;
+    --tab-min-height: 30px !important;
+    --urlbar-min-height: 28px !important;
+    --urlbar-height: 28px !important;
+
+    --chrome-content-separator-color: rgb(12, 12, 13) !important;
+    
+    /* --button-bgcolor: rgba(0, 0, 0, 0.33000001311302185) !important;
+    --button-hover-bgcolor: rgba(207, 207, 216, 0.20000000298023224) !important;
+    --button-active-bgcolor: rgba(207, 207, 216, 0.4000000059604645) !important;
+    --button-primary-bgcolor: rgb(0, 221, 255) !important;
+    --button-primary-hover-bgcolor: rgb(128, 235, 255) !important;
+    --button-primary-active-bgcolor: rgb(170, 242, 255) !important;
+    --button-primary-color: rgb(43, 42, 51) !important;
+    --input-bgcolor: rgb(66, 65, 77) !important;
+    --input-color: rgb(251, 251, 254) !important;
+    --urlbarView-separator-color: rgb(82, 82, 94) !important;
+    --tab-icon-overlay-stroke: rgb(66, 65, 77) !important;
+    --tab-icon-overlay-fill: rgb(251, 251, 254) !important;
+    --arrowpanel-dimmed-further: color-mix(in srgb, currentColor 14%, transparent) !important;
+    --urlbar-icon-fill-opacity: 1 !important;
+    --panel-separator-zap-gradient: linear-gradient(90deg, #9059FF 0%, #FF4AA2 52.08%, #FFBD4F 100%) !important;
+    --lwt-accent-color: rgb(28, 27, 34) !important;
+    --lwt-text-color: rgba(251, 251, 254) !important;
+    --arrowpanel-background: rgb(66, 65, 77) !important;
+    --arrowpanel-color: rgb(251, 251, 254) !important;
+    --arrowpanel-border-color: rgb(82, 82, 94) !important;
+    --toolbar-field-background-color: rgb(28, 27, 34) !important;
+    --toolbar-bgcolor: rgb(43, 42, 51) !important;
+    --toolbar-color: rgb(251, 251, 254) !important;
+    --toolbar-field-color: rgb(251, 251, 254) !important;
+    --toolbar-field-border-color: rgba(0, 0, 0, 0) !important;
+    --toolbar-field-focus-background-color: rgba(66, 65, 77, 1) !important;
+    --toolbar-field-focus-color: rgb(251, 251, 254) !important;
+    --newtab-background-color: rgb(43, 42, 51) !important;
+    --newtab-background-color-secondary: rgb(66, 65, 77) !important;
+    --newtab-text-primary-color: rgb(251, 251, 254) !important;
+    --lwt-accent-color-inactive: rgb(31, 30, 37) !important;
+    --tab-selected-bgcolor: rgb(66, 65, 77) !important;
+    --tab-selected-textcolor: rgb(251, 251, 254) !important;
+    --lwt-tab-line-color: rgba(0, 0, 0, 0) !important;
+    --tabs-navbar-separator-color: rgba(0, 0, 0, 0) !important;
+    --tabs-navbar-separator-style: none !important;
+    --toolbarbutton-icon-fill: rgb(251, 251, 254) !important;
+    --urlbarView-highlight-background: rgb(43, 42, 51) !important;
+    --sidebar-background-color: rgb(56, 56, 61) !important;
+    --sidebar-text-color: rgb(249, 249, 250) !important;
+    --sidebar-border-color: rgba(255, 255, 255, 0.10000000149011612) !important;
+    --tabpanel-background-color: rgb(43, 42, 51) !important; */
+}
+
+#nav-bar {
+    margin-bottom: -28px !important;
+    margin-inline-start: auto !important;
+    margin-inline-end: 0 !important;
+    max-height: 28px !important;
+}
+
+#PersonalToolbar {
+    margin-inline-end: 500px !important;
+}
+
+#urlbar-background {
+    background-color: rgb(37, 35, 46) !important;
+}
+
+.tab-close-button {
+    display: none !important;
+}
+
+.tab-icon-stack {
+    margin-inline-start: 1px !important;
+}
+
+#contextual-feature-recommendation,
+#userContext-icons,
+#reader-mode-button,
+#picture-in-picture-button,
+#shopping-sidebar-button,
+#QRCodeGeneratePageAction,
+#pageActionButton,
+#ssbPageAction,
+#star-button-box {
+    display: none !important;
+}
+
+#context-sendimage,
+#context-sep-setbackground,
+#context-setDesktopBackground,
+#context-inspect-a11y {
+    display: none !important
+}
+}
