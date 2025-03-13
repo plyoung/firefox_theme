@@ -10,5 +10,5 @@ You also need to change these settings in `about:config`
 - toolkit.legacyUserProfileCustomizations.stylesheets > true
 - browser.compactmode.show > true
 
-In Floorp my browser theme is set to "Firefox Proton UI" but other will probably also work. in Firefox it is set to the default dark theme.
+In Floorp my browser theme is set to "Firefox Proton UI" but other will probably also work. In Firefox it is set to the default dark theme.
 
